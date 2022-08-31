@@ -1,0 +1,37 @@
+.heading{
+    font-family: $font-heading;
+    text-transform: uppercase;
+    color: $clr-primary;
+    font-size: 5rem;
+    letter-spacing: .15em;
+    margin: .5em 0;
+}
+
+.sub-heading{
+    color: $clr-secondary;
+    font-family: $font-subHeading;
+    letter-spacing: .25em;
+    font-size: 2rem;
+}
+
+.para{
+    color: $clr-secondary;
+    font-family: $font-para;
+    line-height: 1.5rem;
+    font-size: .85rem;
+}
+.nav-link{
+    font-size: .85rem;
+}
+
+@media screen and (max-width: 768px) {
+    .heading{
+        font-size: 3rem;
+    }
+    .sub-heading{
+        font-size: 1.25rem;
+    }
+    .para{
+        font-size: .85rem;
+    }
+}

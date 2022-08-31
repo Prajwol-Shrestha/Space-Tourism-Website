@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Bellefair";
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 5rem;
+  letter-spacing: 0.15em;
+  margin: 0.5em 0;
+}
+
+.sub-heading {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  letter-spacing: 0.25em;
+  font-size: 2rem;
+}
+
+.para {
+  color: #D0D6F9;
+  font-family: "Barlow";
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 1.25rem;
+  }
+  .para {
+    font-size: 0.85rem;
+  }
+}
+.navbar {
+  padding: 1em 0;
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .hamburger {
+  color: #FFFFFF;
+  z-index: 1;
+}
+.navbar .nav-links-lg {
+  display: none;
+}
+.navbar .logo img {
+  width: 2.5em;
+}
+.navbar .menu {
+  display: none;
+  top: 0%;
+  height: 100vh;
+  position: absolute;
+}
+.navbar .nav-links {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 1.25em 2em;
+  gap: 0.5em;
+  background: rgba(0, 0, 0, 0.8);
+}
+.navbar .nav-link {
+  text-decoration: none;
+  position: relative;
+  margin: 0.25em 0.5em;
+  text-transform: uppercase;
+  color: #D0D6F9;
+  letter-spacing: 2.5px;
+}
+.navbar .nav-link strong {
+  color: #FFFFFF;
+  padding-right: 0.25em;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    width: 95%;
+    margin-right: 0;
+  }
+  .navbar .hamburger {
+    display: none;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .nav-links-lg {
+    display: flex;
+    padding: 1em;
+    gap: 0.25em;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81.5485px);
+            backdrop-filter: blur(81.5485px);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navbar .nav-links-lg {
+    display: flex;
+    padding: 1em 4em;
+    gap: 0.85em;
+  }
+}
+.home-section {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-section .home-intro {
+  margin-top: 3em;
+}
+.home-section .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.home-section .home-graphics-container {
+  margin: 0 auto;
+}
+.home-section .home-graphics-container .home-graphics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 150px;
+  height: 150px;
+  padding: 3em;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: "Bellefair";
+  letter-spacing: 0.25rem;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .home-intro {
+    text-align: center;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home-section .flex {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .home-section .flex .home-intro {
+    margin-left: 5em;
+    max-width: 350px;
+  }
+  .home-section .flex .home-intro, .home-section .flex .home-graphics-container {
+    width: 50%;
+  }
+  .home-section .flex .home-graphics-container {
+    display: flex;
+    justify-content: center;
+  }
+  .home-section .flex .home-graphics-container .home-graphics {
+    width: 200px;
+    height: 200px;
+  }
+}/*# sourceMappingURL=index.css.map */
