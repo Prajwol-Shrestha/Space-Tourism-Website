@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
-import Destination from "./components/destination/Destination";
+import Destinations from "./components/destination/Destinations";
+
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={ <Home /> }/>
-          <Route path="/destination"  element={ <Destination /> }/>
+          <Route path="/destinations"  element={ <Destinations /> }/>
         </Routes>
       </div>
     </Router>

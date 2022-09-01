@@ -4,5 +4,6 @@
 @import './variables';
 @import './typography';
 @import './mixins';
-@import './navbar';
-@import './home';
+@import '../components/navbar/navbar';
+@import '../components/home/home';
+@import '../components/destination/destination';

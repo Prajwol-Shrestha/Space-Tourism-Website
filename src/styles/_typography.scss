@@ -2,7 +2,7 @@
     font-family: $font-heading;
     text-transform: uppercase;
     color: $clr-primary;
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: .15em;
     margin: .5em 0;
 }
@@ -10,28 +10,66 @@
 .sub-heading{
     color: $clr-secondary;
     font-family: $font-subHeading;
-    letter-spacing: .25em;
-    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-size: 1.75rem;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 .para{
     color: $clr-secondary;
     font-family: $font-para;
     line-height: 1.5rem;
-    font-size: .85rem;
+    font-size: 1rem;
 }
 .nav-link{
     font-size: .85rem;
 }
+.num{
+    opacity: 0.25;
+    margin-right: .5em;
+}
 
-@media screen and (max-width: 768px) {
+.title, .sub-title{
+    color: $clr-primary;
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    padding: .5em 0;
+}
+.sub-title{
+    color: $clr-secondary;
+    font-family: $font-subHeading;
+    font-size: .65rem;
+    font-weight: normal;
+    padding: 0;
+}
+
+@media screen and ( min-width: 600px) and (max-width: 1000px) {
     .heading{
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
     .sub-heading{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     .para{
-        font-size: .85rem;
+        font-size: .75rem;
+    }
+    .nav-link{
+        font-size: .65rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .heading{
+        font-size: 2.5rem;
+    }
+    .sub-heading{
+        font-size: 1rem;
+    }
+    .para{
+        font-size: .75rem;
     }
 }
