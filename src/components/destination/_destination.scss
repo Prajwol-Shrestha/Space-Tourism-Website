@@ -1,16 +1,17 @@
-.destination-container{
-    background: url('/src/assets/destination/background-destination-desktop.jpg') no-repeat center;
-    background-size: cover;
-    min-height: 100vh;
-    padding-top: 15vh;
-    text-align: center;
+.destination-container,
+.crew-container{
+    background-image: url('/src/assets/destination/background-destination-desktop.jpg');
+    @include background;
+    
 
-    .destination-img{
+    .destination-img,
+    .crew-img{
         width: 40%;
         margin: .5em auto;
     }
 
-    .destination-nav{
+    .destination-nav,
+    .crew-nav{
         color: $clr-secondary;
         padding: .25em 0;
         margin: 1em 0;
@@ -19,6 +20,12 @@
         span{
             margin: 0 .5em;
             opacity: .65;
+            cursor: pointer;
+        }
+        span:hover,
+        span:focus{
+            opacity: 0.25;
+            border-bottom: 2px solid $clr-secondary;
         }
     }
 
@@ -29,7 +36,8 @@
 
 @media screen and (min-width: 600px){
 
-    .destination-container{
+    .destination-container,
+    .crew-container{
         .heading{
             margin: .25em 0;
         }
@@ -40,7 +48,8 @@
         .container{
             width: 60%;
         }
-        .destination-img{
+        .destination-img,
+        .crew-img{
             width: 20%;
         }
         .destination-footer-info{
@@ -53,18 +62,23 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .destination-info-container{
+    .destination-info-container,
+    .crew-info-container{
         @include centerVH;
         margin: 3em auto;
         text-align: left;
 
-        .destination-img, .destination-info{
+        .destination-img,
+        .destination-info,
+        .crew-img,
+        .crew-info{
             width: 50%;
             .container{
                 margin: 0;
             }
         }
-        .destination-img {
+        .destination-img,
+        .crew-img{
             display: flex;
             align-items: center;
             justify-content: center;

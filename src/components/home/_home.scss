@@ -1,65 +1,7 @@
-// .home-section{
-//     width: 80%;
-//     margin: 0 auto;
-//     display: flex;
-//     align-items: center;
-//     // gap: 4em;
-//     justify-content: space-between;
-//     height: 80vh;
-//     .home-intro{
-//         width: 40%;
-//     }
-
-//     .home-graphics-container{
-//         width: 50%;
-//         display: flex;
-//         justify-content: center;
-//         .home-graphics{
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             width: 200px;
-//             height: 200px;
-//             border: none;
-//             border-radius: 50%;
-//             background-color: $clr-primary;
-//             font-family: $font-heading;
-//             text-transform: uppercase;
-//             letter-spacing: .25rem;
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 768px) {
-//     .home-graphics{
-//         width: 180px;
-//         height: 180px;
-//     }
-// }
-
-// @media screen and (max-width: 500px) {
-//     .home-section{
-//         flex-direction: column;
-//         // height: 100vh;
-//         justify-content: space-evenly;
-
-//         .home-intro, 
-//         .home-graphics-container{
-//             width: 100%;
-//         }
-//         .home-graphics{
-//             width: 140px;
-//             height: 140px;
-//         }
-//     }
-// }
 
 .home-section{
     background-image: url('../assets/home/background-home-desktop.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    @include background;
 
     @include centerVH;
 

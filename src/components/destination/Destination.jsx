@@ -1,22 +1,10 @@
 import React from "react";
 import imgMoon from '../../assets/destination/image-moon.png'
-
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: '2',
-            opacity: '0.25',
-            margin: '1em 0',
-        }}
-    />
-  );
+import ColoredLine from "../ColoredLine";
   
 
 export default function Destination({ data, navMenus }) {
-  const { name, images, description, distance, travel } = data[0];
+  const { name, images, description, distance, travel } = data;
 
 //   Image Path left to fix
 
@@ -30,7 +18,7 @@ export default function Destination({ data, navMenus }) {
         <div className="container">
           <h3 className="heading"> {name} </h3>
           <p className="para"> {description} </p>
-          <ColoredLine color="#383B4B" />
+          <ColoredLine color="#383B4B" margin='1em 0' />
           <div className="destination-footer-info">
             <div>
               <h4 className="sub-title"> avg distance </h4>
