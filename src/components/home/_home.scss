@@ -30,6 +30,12 @@
             font-family: $font-heading;
             letter-spacing: .25rem;
         }
+        .home-graphics:hover,
+        .home-graphics:focus{
+            box-shadow: 2px 0px 35px 40px rgba(208, 214, 249, 0.5);
+            -webkit-box-shadow: 2px 0px 35px 40px rgba(208, 214, 249, 0.5);
+            -moz-box-shadow: 2px 0px 35px 40px rgba(208, 214, 249, 0.5);
+        }
         
     }
 }

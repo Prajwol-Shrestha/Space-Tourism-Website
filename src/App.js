@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import Destinations from "./components/destination/Destinations";
 import Crews from "./components/crew/Crews";
+import Technologies from './components/technology/Technologies'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" exact element={ <Home /> }/>
           <Route path="/destinations"  element={ <Destinations /> }/>
           <Route path="/crews"  element={ <Crews /> }/>
+          <Route path="/technologies"  element={ <Technologies /> }/>
         </Routes>
       </div>
     </Router>

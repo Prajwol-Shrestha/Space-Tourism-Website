@@ -12,20 +12,20 @@ export default function Destinations() {
 
   const destination = destinations[active]
 
-  let count = 0
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // active state is always zero
-      if( count !== destinations.length - 1){
-        count++
-        setActive( prevActive => prevActive + 1 )
-      } else{
-        count = 0
-        setActive(0)
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // let count = 0
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // active state is always zero
+  //     if( count !== destinations.length - 1){
+  //       count++
+  //       setActive( prevActive => prevActive + 1 )
+  //     } else{
+  //       count = 0
+  //       setActive(0)
+  //     }
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const activeStyle = {
     color: "white",
@@ -43,7 +43,7 @@ export default function Destinations() {
       style={active === destinations.indexOf(destination) ? activeStyle : null}
       key={destination.name}
       onClick={() => {
-        count = destinations.indexOf(destination)
+        // count = destinations.indexOf(destination)
         setActive( destinations.indexOf(destination) )
       }}
     >

@@ -1,17 +1,19 @@
 .destination-container,
-.crew-container{
+.crew-container,
+.technology-container{
     background-image: url('/src/assets/destination/background-destination-desktop.jpg');
     @include background;
     
 
     .destination-img,
-    .crew-img{
+    .crew-img,{
         width: 40%;
         margin: .5em auto;
     }
 
     .destination-nav,
-    .crew-nav{
+    .crew-nav,
+    .technology-nav{
         color: $clr-secondary;
         padding: .25em 0;
         margin: 1em 0;
@@ -37,7 +39,8 @@
 @media screen and (min-width: 600px){
 
     .destination-container,
-    .crew-container{
+    .crew-container,
+    .technology-container{
         .heading{
             margin: .25em 0;
         }
@@ -63,7 +66,8 @@
 
 @media screen and (min-width: 1000px) {
     .destination-info-container,
-    .crew-info-container{
+    .crew-info-container,
+    .technology-container{
         @include centerVH;
         margin: 3em auto;
         text-align: left;
@@ -71,14 +75,17 @@
         .destination-img,
         .destination-info,
         .crew-img,
-        .crew-info{
+        .crew-info,
+        .technology-img,
+        .technology-info{
             width: 50%;
             .container{
                 margin: 0;
             }
         }
         .destination-img,
-        .crew-img{
+        .crew-img,
+        .technology-img{
             display: flex;
             align-items: center;
             justify-content: center;
