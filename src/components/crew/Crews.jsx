@@ -14,20 +14,20 @@ export default function Crews() {
     setActive(nextActive);
   }
 
-  let count = 0
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // active state is always zero
-      if( count !== crews.length - 1){
-        count++
-        setActive( prevActive => prevActive + 1 )
-      } else{
-        count = 0
-        setActive(0)
-      }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  // let count = 0
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     // active state is always zero
+  //     if( count !== crews.length - 2){
+  //       setActive( prevActive => prevActive + 1 )
+  //       count++
+  //     } else{
+  //       count = 0
+  //       setActive(0)
+  //     }
+  //   }, 5000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const activeStyle = {
     color: "white",
@@ -40,21 +40,30 @@ export default function Crews() {
       style={active === crews.indexOf(crew) ? activeStyle : null}
       key={crew.name}
       onClick={() => {
-        count = crews.indexOf(crew)
+        // count = crews.indexOf(crew)
         setActive( crews.indexOf(crew) )
       }}
     >
       <BsCircle fill='white'/>
     </span>
   ));
+
+
+  const style = {
+    position: 'absolute',
+    top: '20vh'
+  }
   return (
-    <section className="crew-container">
-      <h2 className="sub-heading">
-        <span className="num"> 02 </span> Pick Your Crew 
-      </h2>
-      <article className="crew-info-container">
-        <Crew data={crew} navMenus={navMenus}/>
-      </article>
-    </section>
-  )
+      <>
+        <section className="crew-container">
+          <h2 className="sub-heading container" style={style}>
+            <span className="num"> 02 </span> Pick Your Crew 
+          </h2>
+          <article className="crew-info-container">
+            <Crew data={crew} navMenus={navMenus}/>
+          </article>
+        </section>
+    
+      </> 
+    )
 }

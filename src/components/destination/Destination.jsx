@@ -1,5 +1,5 @@
 import React from "react";
-import imgMoon from '../../assets/destination/image-moon.png'
+import imgMoon from '../../assets/destination/image-mars.png'
 import ColoredLine from "../ColoredLine";
   
 

@@ -26,6 +26,7 @@ ul {
   font-size: 4rem;
   letter-spacing: 0.15em;
   margin: 0.5em 0;
+  text-align: left;
 }
 
 .sub-heading {
@@ -35,6 +36,7 @@ ul {
   font-size: 1.75rem;
   font-weight: normal;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .para {
@@ -42,6 +44,7 @@ ul {
   font-family: "Barlow";
   line-height: 1.5rem;
   font-size: 1rem;
+  text-align: left;
 }
 
 .nav-link {
@@ -73,12 +76,15 @@ ul {
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .heading {
     font-size: 2.75rem;
+    text-align: center;
   }
   .sub-heading {
     font-size: 1rem;
+    text-align: center;
   }
   .para {
     font-size: 0.75rem;
+    text-align: center;
   }
   .nav-link {
     font-size: 0.65rem;
@@ -87,12 +93,15 @@ ul {
 @media screen and (max-width: 600px) {
   .heading {
     font-size: 2.5rem;
+    text-align: center;
   }
   .sub-heading {
     font-size: 1rem;
+    text-align: center;
   }
   .para {
     font-size: 0.75rem;
+    text-align: center;
   }
 }
 .navbar {
@@ -444,6 +453,8 @@ ul {
 }
 .crew-container {
   background: url("/src/assets/crew/background-crew-desktop.jpg") no-repeat center;
+  display: flex;
+  align-items: center;
 }
 .crew-container .role {
   font-size: 1rem;
@@ -465,29 +476,53 @@ ul {
 .crew-container .crew-nav .span:hover,
 .crew-container .crew-nav .span:focus {
   opacity: 0.25;
-  border: none;
+  border: none !important;
 }
 
 @media screen and (min-width: 600px) {
+  .crew-container {
+    align-items: flex-end;
+  }
   .crew-info-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 0 0;
+  }
+  .crew-info-container .crew-info {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .crew-info-container .crew-img {
     order: 2;
     bottom: 0;
+    width: 50%;
+    margin: 0;
+  }
+  .crew-info-container .crew-img hr {
+    display: none;
+  }
+  .crew-info-container .crew-img img {
+    width: 50%;
   }
   .crew-info-container .crew-info {
     order: 1;
+    align-self: flex-start;
   }
 }
 @media screen and (min-width: 1000px) {
+  .crew-container {
+    align-items: flex-end;
+  }
   .crew-info-container {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     flex-direction: row;
+  }
+  .crew-info-container .crew-img img {
+    width: 60%;
   }
 }
 .technology-container {
@@ -500,6 +535,9 @@ ul {
   display: block;
   height: 30vh;
   width: 100%;
+}
+.technology-container .heading {
+  font-size: 2rem;
 }
 .technology-container .technology-nav-items {
   padding: 0.5em 1em;
@@ -544,9 +582,13 @@ ul {
     width: 95%;
     margin: 0;
   }
+  .technology-container .technology-info-container .technology-info .container .heading {
+    font-size: 2.85rem;
+  }
   .technology-container .technology-info-container .technology-info .container .sub-heading {
     text-align: left;
     margin: 0;
+    font-size: 1.5rem;
   }
   .technology-container .technology-info-container .technology-info .container .para {
     max-width: 80%;

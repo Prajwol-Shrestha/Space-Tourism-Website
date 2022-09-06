@@ -10,6 +10,10 @@
         }
     }
 
+    .heading{
+        font-size: 2rem;
+    }
+
     .technology-nav-items{
         padding: .5em 1em;
         border: 1px solid $clr-primary;
@@ -59,9 +63,13 @@
                     width: 95%;
                     margin: 0;
 
+                    .heading{
+                        font-size: 2.85rem;
+                    }
                     .sub-heading{
                         text-align: left;
                         margin: 0;
+                        font-size: 1.5rem;
                     }
                     .para{
                         max-width: 80%;
