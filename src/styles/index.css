@@ -508,7 +508,7 @@ ul {
   }
   .crew-info-container .crew-info {
     order: 1;
-    align-self: flex-start;
+    align-self: center;
   }
 }
 @media screen and (min-width: 1000px) {

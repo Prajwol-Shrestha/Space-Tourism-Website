@@ -1,17 +1,15 @@
 import React from "react";
-import imgMoon from '../../assets/destination/image-mars.png'
 import ColoredLine from "../ColoredLine";
   
 
 export default function Destination({ data, navMenus }) {
   const { name, images, description, distance, travel } = data;
 
-//   Image Path left to fix
 
   return (
     <>
       <div className="destination-img">
-        <img src={imgMoon} />
+        <img src={images.png} />
       </div>
       <div className="destination-info">
         <div className="destination-nav">{ navMenus }</div>

@@ -1,5 +1,4 @@
 import React from 'react'
-import imgCrew from '../../assets/crew/image-victor-glover.png'
 import ColoredLine from '../ColoredLine';
 
 
@@ -7,12 +6,11 @@ import ColoredLine from '../ColoredLine';
 export default function Crew( { data, navMenus } ) {
   const { name, images, role, bio } = data;
 
-  //   Image Path left to fix
   
     return (
       <>
         <div className="crew-img">
-          <img src={imgCrew} />
+          <img src={images.png} />
           <ColoredLine color="#383B4B" margin='0'/>
         </div>
         <div className="crew-info">
