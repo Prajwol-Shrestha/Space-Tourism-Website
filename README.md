@@ -1,1 +1,2 @@
-in development
+Design from  - Frontendmentor.io
+Status - Completed
