@@ -10,7 +10,7 @@ export default function Crew( { data, navMenus } ) {
     return (
       <>
         <div className="crew-img">
-          <img src={images.png} />
+          <img src={images.png} style={{ width: name === 'Mark Shuttleworth' && '45%'}}/>
           <ColoredLine color="#383B4B" margin='0'/>
         </div>
         <div className="crew-info">
